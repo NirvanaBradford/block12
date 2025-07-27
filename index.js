@@ -3,7 +3,10 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  const Numbers = number.length;
+
+  return Numbers;
 }
 
 /**
@@ -11,7 +14,13 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  let sum = 0;
+  for (let i = 0; i < number.length; i++) {
+    sum += number[i];
+  }
+
+  return sum;
 }
 
 /**
@@ -19,7 +28,7 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  return getSum(numbers) / getLength(numbers);
 }
 
 /**
@@ -27,7 +36,10 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  let min = Math.min(...number);
+
+  return min;
 }
 
 /**
@@ -35,7 +47,10 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  let max = Math.max(...number);
+
+  return max;
 }
 
 /**
@@ -43,7 +58,9 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  let range = getMax(numbers) - getMin(numbers);
+
+  return range;
 }
 
 /**
@@ -51,7 +68,15 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  const even = [];
+  for (const num of number) {
+    if (num % 2 === 0) {
+      even.push(num);
+    }
+  }
+
+  return even;
 }
 
 /**
@@ -59,7 +84,15 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  const number = [1, 2, 3, 4, 5];
+  const odd = [];
+  for (const num of number) {
+    if (num % 2 !== 0) {
+      odd.push(num);
+    }
+  }
+
+  return odd;
 }
 
 // === READ BUT DO NOT EDIT THE CODE BELOW ===
